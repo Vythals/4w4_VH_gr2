@@ -15,8 +15,11 @@ Text Domain: twentytwenty
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
+header{
+    text-align: center;
+}
 body{
-    background-color: rgb(245, 245, 202);
+    background-color: rgb(245, 245, 213);
 }
 h1{
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
@@ -28,4 +31,9 @@ main{
     display: flex;
     flex-direction: column;
     flex-flow: column-reverse;
+    align-items: center;
+}
+footer{
+    text-align: center;
+    background-color:bisque;
 }
