@@ -1,5 +1,5 @@
 h1 {
-    font-size: clamp(0.75rem, -0.75rem + 4.8vw, 3.75rem);
+    font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   }
   h2 {
     font-size: clamp(0.625rem, -0.3125rem + 3vw, 2.5rem);
@@ -38,8 +38,9 @@ h1 {
   }
   
   p {
-    /*font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    /*
+    font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
       "Lucida Sans", Arial, sans-serif;*/
 
-      font-family: 'Times New Roman', Times, serif;
+      font-family:'Times New Roman', Times, serif ;
   }
