@@ -351,6 +351,8 @@ P {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  text-align: center;
+  background-color: rgb(230, 230, 230);
 }
 
 h2 {
@@ -373,10 +375,10 @@ p {
 }
 
 a {
-  color: rgb(76, 88, 135);
+  color: rgb(77, 86, 122);
 }
 a:visited {
-  color: rgb(76, 135, 104);
+  color: rgb(35, 27, 121);
 }
 a:hover {
   color: rgb(211, 28, 28);
@@ -391,4 +393,5 @@ a:hover {
 .site__footer section {
   border: 1px solid #aaa;
   flex: 1 1 200px;
+  background-color: antiquewhite;
 }/*# sourceMappingURL=style.css.map */
