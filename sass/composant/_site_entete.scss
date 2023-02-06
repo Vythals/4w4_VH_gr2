@@ -4,7 +4,11 @@
 }
 .site__header__logo{
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
+    a{
+        font-size: 200%;
+        text-decoration: none;
+    }
 }
 .menu-entete-container{
 

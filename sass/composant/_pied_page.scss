@@ -1,12 +1,15 @@
 .site__footer {
+    height: 50vh;
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
 
     section {
-        border : 1px solid #aaa;
         flex : 1 1  200px;
-        background-color: antiquewhite;
+        background-color: rgb(223, 220, 238);
+        display: flex;
+        justify-content: center;
+        align-items: center;
     }
 
 }

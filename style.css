@@ -351,8 +351,8 @@ P {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
+  font-size: 400%;
   text-align: center;
-  background-color: rgb(230, 230, 230);
 }
 
 h2 {
@@ -365,6 +365,8 @@ h4,
 h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-size: 300%;
+  color: rgb(20, 121, 125);
 }
 
 p {
@@ -372,6 +374,10 @@ p {
   font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
     "Lucida Sans", Arial, sans-serif;*/
   font-family: "Times New Roman", Times, serif;
+}
+
+main {
+  background-color: rgb(245, 239, 231);
 }
 
 a {
@@ -386,19 +392,26 @@ a:hover {
 
 /* --------------------------------------------- composant */
 .site__footer {
+  height: 50vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
 .site__footer section {
-  border: 1px solid #aaa;
   flex: 1 1 200px;
-  background-color: antiquewhite;
+  background-color: rgb(223, 220, 238);
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .site__header__logo {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
+}
+.site__header__logo a {
+  font-size: 200%;
+  text-decoration: none;
 }
 
 .menu-entete-container .menu {

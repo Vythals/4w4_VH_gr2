@@ -23,9 +23,8 @@ h1 {
   
   h1 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    
+    font-size: 400%;
     text-align: center;
-    background-color: rgb(230, 230, 230);
   }
   
   h2 {
@@ -38,6 +37,9 @@ h1 {
   h5,
   h6 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+    font-size: 300%;
+    color: rgb(20, 121, 125);
+
   }
   
   p {
@@ -46,4 +48,7 @@ h1 {
       "Lucida Sans", Arial, sans-serif;*/
 
       font-family:'Times New Roman', Times, serif ;
+  }
+  main{
+    background-color: rgb(245, 239, 231);
   }
