@@ -1,3 +1,11 @@
+
+.site__header{
+    
+}
+.site__header__logo{
+    display: flex;
+    justify-content: space-between;
+}
 .menu-entete-container{
 
     .menu{
@@ -11,7 +19,7 @@
         color: rgb(180, 70, 145);
         a{
             display: block;
+            padding: 5px 20px;
         }
     }
 }
-

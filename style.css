@@ -396,6 +396,11 @@ a:hover {
   background-color: antiquewhite;
 }
 
+.site__header__logo {
+  display: flex;
+  justify-content: space-between;
+}
+
 .menu-entete-container .menu {
   display: flex;
   justify-content: space-around;
@@ -406,4 +411,5 @@ a:hover {
 }
 .menu-entete-container .menu-item a {
   display: block;
+  padding: 5px 20px;
 }/*# sourceMappingURL=style.css.map */
