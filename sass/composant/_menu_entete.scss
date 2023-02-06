@@ -1,0 +1,17 @@
+.menu-entete-container{
+
+    .menu{
+        //ul
+        display: flex;
+        justify-content: space-around;
+        list-style: none;
+    }
+    .menu-item{
+        //li
+        color: rgb(180, 70, 145);
+        a{
+            display: block;
+        }
+    }
+}
+
