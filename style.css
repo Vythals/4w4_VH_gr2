@@ -321,6 +321,10 @@ template {
 }
 
 /* --------------------------------------------- base */
+/*
+css font-size clamp generator
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+*/
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
 }
@@ -351,13 +355,13 @@ P {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  font-size: 400%;
   text-align: center;
 }
 
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
+  text-align: center;
 }
 
 h3,
@@ -365,7 +369,6 @@ h4,
 h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 300%;
   color: rgb(20, 121, 125);
 }
 
@@ -376,18 +379,30 @@ p {
   font-family: "Times New Roman", Times, serif;
 }
 
-main {
-  background-color: rgb(245, 239, 231);
-}
-
 a {
-  color: rgb(77, 86, 122);
+  color: rgb(12, 93, 31);
 }
 a:visited {
-  color: rgb(35, 27, 121);
+  color: rgb(10, 52, 38);
 }
 a:hover {
-  color: rgb(211, 28, 28);
+  color: rgb(49, 144, 82);
+}
+
+main {
+  margin: 0 auto;
+  width: 90%;
+  background-color: rgb(245, 239, 231);
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+}
+main h1 {
+  width: 50%;
+}
+main h3 {
+  width: 100%;
+  text-align: center;
 }
 
 /* --------------------------------------------- composant */
@@ -405,6 +420,17 @@ a:hover {
   align-items: center;
 }
 
+.site__header h1 {
+  margin-bottom: 0;
+  font-size: 400%;
+}
+.site__header h1 a {
+  text-decoration: none;
+}
+.site__header h2 {
+  margin: 0 0 5% 0;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-evenly;
@@ -414,6 +440,11 @@ a:hover {
   text-decoration: none;
 }
 
+/*----------------Menu entete------------------*/
+.menu-entete-container {
+  display: flex;
+  align-content: center;
+}
 .menu-entete-container .menu {
   display: flex;
   justify-content: space-around;
@@ -421,6 +452,8 @@ a:hover {
 }
 .menu-entete-container .menu-item {
   color: rgb(180, 70, 145);
+  display: flex;
+  align-self: center;
 }
 .menu-entete-container .menu-item a {
   display: block;

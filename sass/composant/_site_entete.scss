@@ -1,6 +1,15 @@
 
 .site__header{
-    
+    h1{
+        margin-bottom: 0;
+        font-size: 400%;
+        a{
+            text-decoration: none;
+        }
+    }
+    h2{
+        margin: 0 0 5% 0;
+    }
 }
 .site__header__logo{
     display: flex;
@@ -10,8 +19,10 @@
         text-decoration: none;
     }
 }
-.menu-entete-container{
-
+/*----------------Menu entete------------------*/
+.menu-entete-container{//nav
+    display: flex;
+    align-content: center;
     .menu{
         //ul
         display: flex;
@@ -21,6 +32,8 @@
     .menu-item{
         //li
         color: rgb(180, 70, 145);
+        display: flex;
+        align-self: center;
         a{
             display: block;
             padding: 5px 20px;

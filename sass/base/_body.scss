@@ -1,0 +1,16 @@
+
+main{
+    margin: 0 auto;
+    width: 90%;
+    background-color: rgb(245, 239, 231);
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap-reverse;
+    h1{
+        width: 50%;
+    }
+    h3{
+        width: 100%;
+        text-align: center;
+    }
+  }

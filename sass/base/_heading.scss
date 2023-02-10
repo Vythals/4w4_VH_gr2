@@ -1,3 +1,7 @@
+/*
+css font-size clamp generator
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+*/
 h1 {
     font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
   }
@@ -23,13 +27,13 @@ h1 {
   
   h1 {
     font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-    font-size: 400%;
     text-align: center;
   }
   
   h2 {
     font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
     /* font-family: "Slackey", cursive; */
+    text-align: center;
   }
   
   h3,
@@ -37,7 +41,6 @@ h1 {
   h5,
   h6 {
     font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-    font-size: 300%;
     color: rgb(20, 121, 125);
 
   }
@@ -48,7 +51,4 @@ h1 {
       "Lucida Sans", Arial, sans-serif;*/
 
       font-family:'Times New Roman', Times, serif ;
-  }
-  main{
-    background-color: rgb(245, 239, 231);
   }

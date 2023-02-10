@@ -13,8 +13,6 @@
         <h1>
             <a href="<?php echo get_permalink();?>"><?php echo get_the_title(); ?></a>
         </h1>
-        
-            <hr>
         <?php endwhile;
     endif;
 ?>
