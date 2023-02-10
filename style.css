@@ -395,7 +395,7 @@ main {
   background-color: rgb(245, 239, 231);
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap-reverse;
+  flex-wrap: wrap;
 }
 main h1 {
   width: 50%;
@@ -403,6 +403,10 @@ main h1 {
 main h3 {
   width: 100%;
   text-align: center;
+}
+main small {
+  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+  font-weight: normal;
 }
 
 /* --------------------------------------------- composant */
@@ -422,7 +426,7 @@ main h3 {
 
 .site__header h1 {
   margin-bottom: 0;
-  font-size: 400%;
+  font-size: clamp(1rem, -0.0563rem + 3.3803vw, 4rem);
 }
 .site__header h1 a {
   text-decoration: none;
@@ -436,7 +440,7 @@ main h3 {
   justify-content: space-evenly;
 }
 .site__header__logo a {
-  font-size: 200%;
+  font-size: clamp(1rem, 0.6479rem + 1.1268vw, 2rem);
   text-decoration: none;
 }
 

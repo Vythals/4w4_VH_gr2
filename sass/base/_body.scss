@@ -5,12 +5,16 @@ main{
     background-color: rgb(245, 239, 231);
     display: flex;
     justify-content: space-around;
-    flex-wrap: wrap-reverse;
+    flex-wrap: wrap;
     h1{
         width: 50%;
     }
     h3{
         width: 100%;
         text-align: center;
+    }
+    small{
+        font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
+        font-weight: normal;
     }
   }

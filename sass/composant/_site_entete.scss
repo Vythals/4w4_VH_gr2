@@ -2,7 +2,7 @@
 .site__header{
     h1{
         margin-bottom: 0;
-        font-size: 400%;
+        font-size: clamp(1rem, -0.0563rem + 3.3803vw, 4rem);
         a{
             text-decoration: none;
         }
@@ -15,7 +15,7 @@
     display: flex;
     justify-content: space-evenly;
     a{
-        font-size: 200%;
+        font-size: clamp(1rem, 0.6479rem + 1.1268vw, 2rem);
         text-decoration: none;
     }
 }
