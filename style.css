@@ -398,9 +398,11 @@ main {
   flex-wrap: wrap;
 }
 main h1 {
+  font-size: clamp(1rem, 0.2077rem + 2.5352vw, 3.25rem);
   width: 50%;
 }
 main h3 {
+  font-size: clamp(1rem, 0.2077rem + 2.5352vw, 3.25rem);
   width: 100%;
   text-align: center;
 }
@@ -410,18 +412,31 @@ main small {
 }
 
 /* --------------------------------------------- composant */
-.site__footer {
+footer {
+  background-color: rgb(236, 242, 236);
+}
+footer h1 {
+  margin: 0;
+  padding: 5%;
+  font-weight: 500;
+}
+footer .site__footer {
   height: 50vh;
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-.site__footer section {
+footer .site__footer section {
   flex: 1 1 200px;
-  background-color: rgb(223, 220, 238);
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+}
+footer .site__footer section small {
+  margin: 2%;
+  width: 40%;
+  display: flex;
+  flex-wrap: wrap;
 }
 
 .site__header h1 {
