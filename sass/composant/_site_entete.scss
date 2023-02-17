@@ -1,4 +1,8 @@
-.site__header {}
+.site__header {
+    h1,h2{
+        text-align: center;
+    }
+}
 
 .site__header__logo {
     display: flex;

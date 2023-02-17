@@ -400,6 +400,10 @@ a:hover {
   flex: 1 1 200px;
 }
 
+.site__header h1, .site__header h2 {
+  text-align: center;
+}
+
 .site__header__logo {
   display: flex;
   justify-content: space-between;
