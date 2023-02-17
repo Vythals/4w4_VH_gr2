@@ -13,6 +13,7 @@ Text Domain: 2023-4w4
 
 @import "variables/dimension";
 @import "normalize/normalize";
+@import "variables/root";
 // @import "normalize/box-sizing";
 
 /* --------------------------------------------- base */
@@ -20,8 +21,10 @@ Text Domain: 2023-4w4
 // @import "base/espacement";
 @import "base/link";
 @import "base/body";
+@import "base/markdown";
 // @import "base/list";
 
 /* --------------------------------------------- composant */
 @import "composant/pied_page";
 @import "composant/site_entete";
+@import "composant/bloc_flex";

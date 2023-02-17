@@ -1,12 +1,12 @@
 <?php
 /**
- * Modèle par défaut
+ * Modèle category
  * 
  */
 ?>
 <?php get_header(); ?>
 <main>
-    <h3>Articles</h3>
+    <h3>Category.php</h3>
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post(); ?>
