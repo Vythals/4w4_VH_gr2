@@ -1,13 +1,12 @@
-# exercice 1
+# Lab #3
 ## 4w4 - Conception d'interface et développement Web
-### Auteur: Vincent Hum
+### Auteur: Eddy Martin
 #### Description
-- formatage scss
-- Création d'un thème plus développé
-- Création d'un dépôt git local
-- 5 commit
-- Création d'un dépôt github
-- dépôt sur un serveur enligne
+- Améliorer la classe .blocflex
+- Création du modèle category.php
+- Améliorer l'affichage des articles « markdown »
 
 #### Références
-- https://developer.wordpress.org/
+- https://eddytuto.ca/
+- https://developer.wordpress.org/themes/
+- https:// ... cotre site syr site ground

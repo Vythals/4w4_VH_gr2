@@ -1,27 +1,12 @@
-footer{
-    background-color: rgb(236, 242, 236);
-    h1{
-        margin: 0;
-        padding: 5%;
-        font-weight: 500;
-    }
-    .site__footer {
-    height: 50vh;
+.site__footer {
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-    section {
-        flex : 1 1  200px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        small{
-            margin: 2%;
-            width: 40%;
-            display: flex;
-            flex-wrap: wrap;
-        }
-    }
+
 
 }
+
+.site__footer section {
+    border : 1px solid #aaa;
+    flex : 1 1  200px;
 }

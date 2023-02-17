@@ -1,9 +1,9 @@
 @charset "UTF-8";
 /*
-Theme Name: 2023 4w4 Vincent Hum
-Theme URI: 
-Author: Vincent Hum
-Author URI: https://github.com/Vythals
+Theme Name: 2023 4w4 Eddy Martin
+Theme URI: https://referenced.ca
+Author: Eddy Martin
+Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
 Version: 1.0
@@ -322,8 +322,10 @@ template {
 
 /* --------------------------------------------- base */
 /*
-css font-size clamp generator
-https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjUwMHB4IiwibWF4V2lkdGgiOiI5MDBweCIsIm1pbkZvbnRTaXplIjoiMTZweCIsIm1heEZvbnRTaXplIjoiNDhweCJ9
+css font-size clamp generator *
+
+https://clamp.font-size.app/?config=eyJyb290IjoiMTYiLCJtaW5XaWR0aCI6IjQwMHB4IiwibWF4V2lkdGgiOiIyNjAwcHgiLCJtaW5Gb250U2l6ZSI6IjE2cHgiLCJtYXhGb250U2l6ZSI6IjcwcHgifQ%3D%3D
+
 */
 h1 {
   font-size: clamp(0.875rem, -0.0385rem + 2.9231vw, 3.25rem);
@@ -355,13 +357,11 @@ P {
 
 h1 {
   font-family: Impact, Haettenschweiler, "Arial Narrow Bold", sans-serif;
-  text-align: center;
 }
 
 h2 {
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   /* font-family: "Slackey", cursive; */
-  text-align: center;
 }
 
 h3,
@@ -369,7 +369,6 @@ h4,
 h5,
 h6 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  color: rgb(20, 121, 125);
 }
 
 p {
@@ -380,109 +379,67 @@ p {
 }
 
 a {
-  color: rgb(12, 93, 31);
+  color: rgb(76, 88, 135);
 }
 a:visited {
-  color: rgb(10, 52, 38);
+  color: rgb(76, 135, 104);
 }
 a:hover {
-  color: rgb(49, 144, 82);
-}
-
-main {
-  margin: 0 auto;
-  width: 90%;
-  background-color: rgb(245, 239, 231);
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-}
-main h1 {
-  font-size: clamp(1rem, 0.2077rem + 2.5352vw, 3.25rem);
-  width: 50%;
-}
-main h3 {
-  font-size: clamp(1rem, 0.2077rem + 2.5352vw, 3.25rem);
-  width: 100%;
-  text-align: center;
-}
-main small {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
-  font-weight: normal;
-}
-main .contenu {
-  font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.25rem);
-  margin-bottom: 5%;
-}
-
-hr {
-  display: none;
+  color: rgb(211, 28, 28);
 }
 
 /* --------------------------------------------- composant */
-footer {
-  background-color: rgb(236, 242, 236);
-}
-footer h1 {
-  margin: 0;
-  padding: 5%;
-  font-weight: 500;
-}
-footer .site__footer {
-  height: 50vh;
+.site__footer {
   display: flex;
   justify-content: space-between;
   flex-wrap: wrap;
 }
-footer .site__footer section {
-  flex: 1 1 200px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-footer .site__footer section small {
-  margin: 2%;
-  width: 40%;
-  display: flex;
-  flex-wrap: wrap;
-}
 
-.site__header h1 {
-  margin-bottom: 0;
-  font-size: clamp(1rem, -0.0563rem + 3.3803vw, 4rem);
-}
-.site__header h1 a {
-  text-decoration: none;
-}
-.site__header h2 {
-  margin: 0 0 5% 0;
+.site__footer section {
+  border: 1px solid #aaa;
+  flex: 1 1 200px;
 }
 
 .site__header__logo {
   display: flex;
-  justify-content: space-evenly;
-}
-.site__header__logo a {
-  font-size: clamp(1rem, 0.6479rem + 1.1268vw, 2rem);
-  text-decoration: none;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/*----------------Menu entete------------------*/
-.menu-entete-container {
-  display: flex;
-  align-content: center;
-}
+/* -------------------------------------------------- menu-enetete */
 .menu-entete-container .menu {
   display: flex;
-  justify-content: space-around;
-  list-style: none;
+  list-style-type: none;
+  justify-content: flex-end;
 }
-.menu-entete-container .menu-item {
-  color: rgb(180, 70, 145);
-  display: flex;
-  align-self: center;
+.menu-entete-container .menu .menu-item {
+  color: rgb(0, 42, 85);
 }
-.menu-entete-container .menu-item a {
+.menu-entete-container .menu .menu-item a {
   display: block;
   padding: 5px 20px;
+}
+
+/*
+.blocflex {
+    display : flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    article {
+        flex: 1 0 200px;
+        border : 1px solid #aaa;
+        padding : 10px;
+    }
+}
+*/
+.blocflex {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 2rem;
+  margin: 2rem;
+}
+.blocflex article {
+  border: 1px solid #aaa;
+  padding: 1rem;
 }/*# sourceMappingURL=style.css.map */

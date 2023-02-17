@@ -19,12 +19,13 @@ function enregistrement_nav_menu(){
         'footer'  => 'Menu pied de page'
     ) );
 }
-add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );
-/*-------------------------------add_theme_support*/
-add_theme_support('title-tag');
-add_theme_support('custom-logo',
+add_action( 'after_setup_theme', 'enregistrement_nav_menu', 0 );     
+
+/*----------------------------------------- add_theme_support() */
+add_theme_support( 'title-tag' );
+add_theme_support( 'custom-logo',
                     array(
-                        'heigh'=>150,
-                        'heigh'=>150,
-                    ));
-add_theme_support('post-thumbnails');
+                        'height' => 150,
+                        'width'  => 150,
+) );
+add_theme_support( 'post-thumbnails' );

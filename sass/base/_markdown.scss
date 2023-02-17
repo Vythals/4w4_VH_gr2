@@ -1,15 +1,32 @@
-ul,ol{}
-ul > li{}
-ol > li{}
-ul>li{}
-ol>li{}
-ol>li>ol{}
+/* Les balise qu'on utilse dans la conversion des fichiers markdown */
 
-pre{}
-code{}
-i{}
-blockquote{}
-hr{
-    display: none;
+/* Liste */
+ul,ol{}
+
+ul > li,
+ol > li{
+
 }
-strong{}
+
+ul>li {}
+
+ol>li{}
+
+/* ----------------------------  pre */
+
+pre {}
+
+code {}
+
+i{}
+
+blockquote {}
+
+hr {}
+
+strong {}
+
+
+
+
+
