@@ -11,7 +11,9 @@
    <header class="site__header">
     <section class="site__header__logo">
         <div class="logomenu">
-            <?php the_custom_logo(); ?>
+            <div class="logoIMG">
+                <?php the_custom_logo(); ?>
+            </div>
             <?php wp_nav_menu(array(
             "menu" => "entete",
             "container" => "nav"

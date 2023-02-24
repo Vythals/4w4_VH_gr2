@@ -1,4 +1,10 @@
-.site__header {}
+.site__header {
+    margin: 0 auto;
+    width: 80vw;
+    h1,h2{
+        text-align: center;
+    }
+}
 
 .site__header__logo {
     display: flex;
@@ -11,6 +17,13 @@
     justify-content: flex-start;
     align-items: center;
 }
+.custom-logo{
+    width: 100%;
+    height: 100%;
+}
+.logoIMG{
+    width: 11vw;
+}
 
 /* -------------------------------------------------- menu-enetete */
 .menu-entete-container { // nav
@@ -19,12 +32,22 @@
         display : flex;
         list-style-type: none;
         justify-content: flex-start;
+        flex-direction: column;
         .menu-item { //li
             color : rgb(0, 42, 85);
             a {
             display : block;
             padding : 5px 20px;
+            font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
             }
         }
     }
     }
+@media screen and (min-width: 992px){
+    .menu-entete-container { // nav
+
+        .menu{ // ul
+            flex-direction: row;
+        }
+        }
+}
