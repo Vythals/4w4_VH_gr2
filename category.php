@@ -5,10 +5,9 @@
  */
 ?>
 <?php get_header(); ?>
-
 <main class="site__main">
-<code>category.php</code>
-   <section class="blocflex">
+    <code>category.php</code>
+    <section class="blocflex">
       <?php
       $category = get_queried_object();
       $args = array(
@@ -19,14 +18,14 @@
       $query = new WP_Query( $args );
       if ( $query->have_posts() ) :
          while ( $query->have_posts() ) : $query->the_post(); ?>
-            <article>
-               <h2><a href="<?php the_permalink(); ?>"> <?= get_the_title(); ?></a></h2>
-               <p><?= wp_trim_words(get_the_excerpt(), 15) ?></p>
-            </article>
+         <?php
+         /* $category->slug peut avoir une de ces deux valeurs : "cours" ou "4w4" */
+          get_template_part('template-parts/categorie',$category->slug); ?>
          <?php endwhile; ?>
       <?php endif;
       wp_reset_postdata();?>
    </section>
 </main>
+
 
 <?php get_footer(); ?>

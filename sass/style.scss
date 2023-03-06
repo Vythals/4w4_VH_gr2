@@ -1,7 +1,7 @@
 /*
-Theme Name: 2023 4w4 Eddy Martin
+Theme Name: 2023 4w4 Vincent Hum
 Theme URI: https://referenced.ca
-Author: Eddy Martin
+Author: Vincent Hum
 Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
@@ -31,3 +31,7 @@ Text Domain: 2023-4w4
 @import "composant/pied_page";
 @import "composant/site_entete";
 @import "composant/bloc_flex";
+
+/* ---------------------------------------------- layout */
+
+@import "layout/aside-contenu";

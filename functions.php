@@ -42,7 +42,7 @@ function cidweb_modifie_requete_principal( $query ) {
     if (    $query->is_home()
             && $query->is_main_query()
             && ! is_admin() ) {
-      $query->set( 'category_name', '4w4-note' );
+      $query->set( 'category_name', '4w4' );
       $query->set( 'orderby', 'title' );
       $query->set( 'order', 'ASC' );
       }

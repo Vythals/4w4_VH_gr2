@@ -1,8 +1,8 @@
 @charset "UTF-8";
 /*
-Theme Name: 2023 4w4 Eddy Martin
+Theme Name: 2023 4w4 Vincent Hum
 Theme URI: https://referenced.ca
-Author: Eddy Martin
+Author: Vincent Hum
 Author URI: https://github.com/eddytuto
 Description: Thème de base qui nous permettra d'apprendre les rudiments de la création de thèeme
 Tags: blog, one-column, custom-background, custom-colors, custom-logo, custom-menu, editor-style, featured-images, footer-widgets, full-width-template, rtl-language-support, sticky-post, theme-options, threaded-comments, translation-ready, block-styles, wide-blocks, accessibility-ready
@@ -467,26 +467,76 @@ ul {
     flex-direction: row;
   }
 }
-/*
 .blocflex {
-    display : flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
-
-    article {
-        flex: 1 0 200px;
-        border : 1px solid #aaa;
-        padding : 10px;
-    }
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
-*/
+
+/*
 .blocflex {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  // Cette déclaration sera meilleur quand min() sera mieux supporté
+  // grid-template-columns: repeat(auto-fill, minmax(min(200px, 100%), 1fr));
   gap: 2rem;
   margin: 2rem;
 }
-.blocflex article {
+*/
+.blocflex__article {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
   border: 1px solid #aaa;
   padding: 1rem;
+  flex: 1 0 200px;
+}
+.blocflex__article h3, .blocflex__article h5, .blocflex__article h6, .blocflex__article p {
+  margin: 0;
+  padding: 0;
+}
+
+.blocflex__galerie {
+  flex: 1 0 100%;
+}
+
+/* ---------------------------------------------- layout */
+/**
+*  Mise en page général avec display:grid
+*/
+.site__header {
+  grid-area: header;
+  padding: 1rem clamp(1rem, 3vw, 20rem);
+  background-color: antiquewhite;
+}
+
+.site__main {
+  grid-area: main;
+  overflow: hidden; /* Resolves issue with <pre> elements forcing full width. */
+}
+
+.site__footer {
+  grid-area: footer;
+  background-color: antiquewhite;
+}
+
+.site__aside {
+  grid-area: aside;
+  background-color: rgb(103, 236, 178);
+}
+
+.site {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-areas: "header" "aside" "main" "footer";
+  row-gap: 50px;
+  background-color: rgb(121, 205, 235);
+}
+@media screen and (min-width: 1000px) {
+  .site {
+    grid-template-columns: 20% auto;
+    grid-template-areas: "header header" "aside main" ".main" "footer footer";
+  }
 }/*# sourceMappingURL=style.css.map */
