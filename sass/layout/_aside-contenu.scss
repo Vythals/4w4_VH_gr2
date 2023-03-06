@@ -30,15 +30,24 @@
     "aside"
     "main"
     "footer";
-  row-gap: 50px;
+  // row-gap: 50px;
   background-color: rgb(121, 205, 235);
   @media screen and (min-width: 1000px) {
       grid-template-columns: 20% auto;
       grid-template-areas:
       "header header"
       "aside main"
-      ".main"
+     /*  ". main" */
       "footer footer";
-      
   }
+}
+.no-aside {
+  @media screen and (min-width: 1000px) {
+    grid-template-columns: auto;
+    grid-template-areas:
+    "header"
+    "aside"
+    "main"
+    "footer";
+}
 }

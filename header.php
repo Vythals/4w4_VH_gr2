@@ -7,13 +7,11 @@
     <?php wp_head(); ?>
 </head>
 
-<body class="site">
+<body class="site <?php echo (is_front_page()?'no-aside':'');?>">
    <header class="site__header">
     <section class="site__header__logo">
         <div class="logomenu">
-            <div class="logoIMG">
-                <?php the_custom_logo(); ?>
-            </div>
+            <?php the_custom_logo(); ?>
             <?php wp_nav_menu(array(
             "menu" => "entete",
             "container" => "nav"
@@ -24,10 +22,8 @@
     <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
     <h2><?= bloginfo('description') ?></h2>
    </header>
-   <aside class="site__aside">
-        <h3>Menu secondaire</h3>
-        <?php wp_nav_menu(array(
-            "menu" => "aside",
-            "container" => "nav"
-        )); ?>
-   </aside>
+    <?php 
+    if( ! is_front_page()){
+    get_template_part("template-parts/aside"); 
+    }
+    ?>
