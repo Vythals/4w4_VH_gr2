@@ -26,6 +26,4 @@
       wp_reset_postdata();?>
    </section>
 </main>
-
-
 <?php get_footer(); ?>

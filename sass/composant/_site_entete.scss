@@ -1,10 +1,6 @@
-.site__header {
-    margin: 0 auto;
-    width: 80vw;
-    h1,h2{
-        text-align: center;
-    }
-}
+/* --------------------------------------------------- Entete de la page */
+
+.site__header {}
 
 .site__header__logo {
     display: flex;
@@ -12,42 +8,60 @@
     align-items: center;
 }
 
-.logomenu {
+
+.menu__recherche {
     display: flex;
-    justify-content: flex-start;
-    align-items: center;
-}
-.custom-logo{
-    width: 100%;
-    height: 100%;
-}
-.logoIMG{
-    width: 11vw;
+    justify-content: flex-end;
+    align-items: flex-end;
+    flex-direction: column-reverse;
+    justify-content: center;;
+    @media screen and (min-width: $largeur__bureau) {
+        flex-direction: row;
+        align-items: center;
+        justify-content: flex-end;
+
+    }
 }
 
 /* -------------------------------------------------- menu-enetete */
+#chkMenu:checked ~ .menu-entete-container  {
+    transform: translateX(0);
+}
+
 .menu-entete-container { // nav
+    transform : translateX(300px);
+    transition : transform .5s;
+    @media screen and (min-width:$largeur__tablette) {
+        transform : translateX(0);
+    }
 
     .menu{ // ul
         display : flex;
+        flex-direction: column; 
         list-style-type: none;
+        align-items: flex-end;
         justify-content: flex-start;
-        flex-direction: column;
+        @media screen and (min-width : $largeur__tablette ){
+           flex-direction: row; 
+           align-items: center;
+           justify-content: flex-end;
+
+        }
         .menu-item { //li
             color : rgb(0, 42, 85);
             a {
             display : block;
             padding : 5px 20px;
-            font-size: clamp(0.5rem, 0.125rem + 1.2vw, 1.1rem);
+            white-space: nowrap;
             }
         }
     }
     }
-@media screen and (min-width: 992px){
-    .menu-entete-container { // nav
 
-        .menu{ // ul
-            flex-direction: row;
-        }
-        }
-}
+
+    /* //////////////////////////////////////////// Zone de recherche */
+
+    .recherche {
+        display : flex;
+        flex-wrap: nowrap;
+    }

@@ -21,7 +21,7 @@
   - search.php
   - header.php
   - footer.php
-- Une mise en page entièrement adaptative
+  - Une mise en page entièrement adaptative
 - S'inspirer des sites:
   - https://www.scrum.org/
   - https://cfe.dev/
