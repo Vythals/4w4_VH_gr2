@@ -1,26 +1,43 @@
-$footer-bg-color: #1c1c1c;
-$footer-text-color: #f2f2f2;
-$footer-link-color: #fff;
+$footer-bg-color: #cff5d8;
+$footer-text-color: #000000;
+$footer-link-color: #1e1e1e;
 $footer-link-hover-color: #bfbfbf;
-$footer-heading-color: #fff;
+$footer-heading-color: #5ca45a;
 $footer-border-color: #bfbfbf;
 
 footer {
   background-color: $footer-bg-color;
   color: $footer-text-color;
   padding: 50px 0;
-
-  .container-footer {
-    max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $largeur__bureau) {
+    flex-direction: row;
+  }
+  .container-logo-footer{
     margin: 0 auto;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-grow: 1;
+    justify-content: center;
+    align-items: center;
+  }
+  .container-footer {
+    display: flex;
+    flex-grow: 2;
+    flex-direction: column;
+    @media screen and (min-width: $largeur__bureau) {
+      flex-direction: row;
+      flex-wrap: wrap;
+      justify-content: space-between;
+      margin: 0 auto;
+    }
 
     .liens-footer, .reseaux-sociaux-footer, .informations-footer {
-      flex: 1 1 300px;
-      margin: 0 10px;
-
+      flex: 1 1;
+      padding-left: 2rem;
+      @media screen and (min-width: $largeur__bureau) {
+        margin: 0 auto;
+      }
       h3 {
         color: $footer-heading-color;
         font-size: 1.5rem;
@@ -31,6 +48,7 @@ footer {
         list-style: none;
         padding: 0;
         margin: 0;
+        align-content: center;
 
         li {
           margin-bottom: 10px;
@@ -49,6 +67,13 @@ footer {
       p {
         margin-bottom: 10px;
       }
+    }
+  }
+  .reseaux-sociaux-footer{
+    ul{
+      display: flex;
+      justify-content: space-between;
+      width: 40%;
     }
   }
 

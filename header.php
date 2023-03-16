@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/cbea74d857.js" crossorigin="anonymous"></script>
     <?php wp_head(); ?>
 </head>
 <?php 
@@ -32,8 +33,11 @@
            
       </div>  
     </section>
-    <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
-    <h2><?= bloginfo('description') ?></h2>
+    <div class="titre__header">
+      <h1><a href="<?= bloginfo('url') ?>"><?= bloginfo('name') ?></a></h1>
+      <h2><?= bloginfo('description') ?></h2>
+    </div>
+    
    </header>
 
     <?php 
