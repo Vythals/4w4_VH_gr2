@@ -1,16 +1,14 @@
-<footer>
+<footer class="site__footer">
   <div class="container-logo-footer">
     <?php the_custom_logo(); ?>
   </div>
   <div class="container-footer">
     <div class="liens-footer">
       <h3>Liens</h3>
-      <ul>
-        <li><a href="#">Accueil</a></li>
-        <li><a href="#">À propos</a></li>
-        <li><a href="#">Services</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
+      <?php wp_nav_menu(array(
+            "menu" => "pied",
+            "container" => "nav"
+            )) ?>
     </div>
     <div class="informations-footer">
       <h3>Informations</h3>

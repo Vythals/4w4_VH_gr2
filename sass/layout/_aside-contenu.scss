@@ -5,7 +5,12 @@
 .site__header {
   grid-area: header;
   padding: 1rem clamp(1rem, 3vw, 20rem);
-  background-color: antiquewhite;
+  background-color: white;
+  @media screen and (min-width: $largeur__bureau) {
+    box-shadow: 0rem 0rem 1rem 0rem;
+    margin: 0 auto 3rem auto;
+    width: 80vw;
+  }
 }
 
 .site__main {
@@ -15,11 +20,11 @@
 
 .site__footer {
   grid-area: footer;
-  background-color: antiquewhite;
+  background-color: rgba(35, 156, 104, 0.548);
 }
 .site__aside {
   grid-area: aside;
-  background-color: rgb(103, 236, 178);
+  background-color: rgba(103, 236, 178, 0.657);
 }
 
 .site {
@@ -31,7 +36,7 @@
     "main"
     "footer";
   // row-gap: 50px;
-  background-color: rgb(121, 205, 235);
+  background-color: antiquewhite;
   @media screen and (min-width: $largeur__bureau) {
       grid-template-columns: 20% auto;
       grid-template-areas:
