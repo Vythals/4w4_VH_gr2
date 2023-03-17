@@ -9,7 +9,7 @@
 - Le design général permettra de mettre en valeur le progamme TIM du collège de Maisonneuve
 - Continuer de faire progresser votre thème
 - Déployer votre projet sur le serveur **_Siteground_**
-
+ - Lien **_Siteground_** : https://cidweb7.sg-host.com/
 ### Ce projet vous permettra d\'améliorer globalement votre site en y intégrant les éléments suivants:
 
 - Un pied de page

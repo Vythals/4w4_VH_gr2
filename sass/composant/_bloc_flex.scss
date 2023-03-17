@@ -25,6 +25,9 @@ align-items: center;
 text-align: center;
 border: 1px solid rgb(76, 135, 104);
 padding: 1rem;
+margin: 1rem;
+background-color: white;
+box-shadow: 0px 2px 4px 0px;
 h3,h5,h6,p {
   margin:0;
   padding:0;
@@ -33,4 +36,16 @@ h3,h5,h6,p {
 
 .blocflex__galerie {
  flex: 1 0 100%;
+}
+.article_flex{
+  overflow-x: hidden;
+}
+.article_titre_flex{
+  display: flex;
+  justify-content: center;
+}
+.article_contenu_flex{
+  word-wrap:break-word;
+  width: 90%;
+  margin: 0 auto;
 }
