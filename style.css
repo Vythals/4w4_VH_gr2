@@ -623,6 +623,33 @@ footer::before {
   margin: 0 auto;
 }
 
+.search {
+  display: block;
+  background-color: lightgreen;
+  padding: 1rem;
+}
+@media screen and (min-width: 1000px) {
+  .search {
+    max-width: 300px;
+    min-width: 300px;
+    margin-right: 2rem;
+  }
+}
+.search h5 {
+  margin: 1%;
+}
+
+.resultat {
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+}
+@media screen and (min-width: 1000px) {
+  .resultat {
+    flex-direction: row;
+  }
+}
+
 /* --------------------------------------------- layout */
 /**
 *  Mise en page général avec display:grid
@@ -667,7 +694,7 @@ footer::before {
 .no-aside {
   grid-template-areas: "header" "main" "footer";
 }
-.no-aside main .blocflex {
+.no-aside main {
   width: 80vw;
   margin: 0 auto;
 }

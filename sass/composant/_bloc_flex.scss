@@ -49,3 +49,24 @@ h3,h5,h6,p {
   width: 90%;
   margin: 0 auto;
 }
+.search{
+  display: block;
+  background-color:lightgreen;
+  padding: 1rem;
+  @media screen and (min-width: $largeur__bureau) {
+    max-width: 300px;
+    min-width: 300px;
+    margin-right: 2rem;
+  }
+  h5{
+    margin: 1%;
+  }
+}
+.resultat{
+  margin: 1rem;
+  display: flex;
+  flex-direction: column;
+  @media screen and (min-width: $largeur__bureau) {
+    flex-direction: row;
+  }
+}

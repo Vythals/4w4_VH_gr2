@@ -9,10 +9,10 @@ $duree = substr($titre, strpos($titre, '('));
 // strpos($titre, '(') permet de trouver la position dy caractère ,'('
 ?> 
 
-<article class="search__cours">  
+<article class="search">  
     <h5><a href="<?php the_permalink(); ?>"> <?= $titre_long ?></a></h5>
     <h5>Sigle:<?= $sigle ?></h5>
     <h5>Durée:<?= $duree ?></h5>
-    <? // <p><?php the_field('enseignant') ?></p> 
-    <? // <p><?php the_field('domaine') ?></p>
+    <h5><?php the_field('enseignant') ?></h5> 
+    <h5><?php the_field('domaine') ?></h5>
 </article>
