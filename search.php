@@ -10,8 +10,15 @@
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post();
-            the_title('<h4>','</h4>');?>
-     
+            ?> 
+            <?php /** la categorie */?>
+            <?php
+            $category = get_the_category();
+            ?>
+            
+            <?php
+          get_template_part('template-parts/search',$category); ?>
+            <?php /** résumé */?>
             <?= wp_trim_words(get_the_excerpt(), 50, " [...] "); ?>
             <hr>
         <?php endwhile;
