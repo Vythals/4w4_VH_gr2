@@ -667,7 +667,7 @@ footer::before {
 .no-aside {
   grid-template-areas: "header" "main" "footer";
 }
-.no-aside main {
+.no-aside main .blocflex {
   width: 80vw;
   margin: 0 auto;
 }

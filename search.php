@@ -6,8 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main class="site__main">
-<h3>search.php</h3>
-<h3>Résultats de la recherche</h3>
+<h2>Résultats de la recherche</h2>
 <?php
     if (have_posts()): 
         while (have_posts()) : the_post();

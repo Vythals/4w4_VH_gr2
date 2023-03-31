@@ -45,8 +45,10 @@
 }
 .no-aside {
   main{
-    width: 80vw;
-    margin: 0 auto;
+    .blocflex{
+      width: 80vw;
+      margin: 0 auto;
+    }
   }
   grid-template-areas:
   "header"
