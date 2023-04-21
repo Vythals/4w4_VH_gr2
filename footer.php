@@ -26,6 +26,9 @@
         <li><a href="#"><i class="fab fa-linkedin"></i></a></li>
       </ul>
     </div>
+    <div class="sidebar">
+    <?php dynamic_sidebar( 'sidebar' ); ?>
+  </div>
   </div>
 </footer>
 <?php wp_footer(); ?>
