@@ -484,6 +484,10 @@ footer::before {
   margin: 30px 0;
 }
 
+.Footer_1 {
+  display: flex;
+}
+
 /* --------------------------------------------------- Entete de la page */
 .site__header__logo {
   display: flex;
