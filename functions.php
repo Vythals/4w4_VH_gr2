@@ -77,13 +77,13 @@ function cidweb_modifie_requete_principal( $query ) {
 
 function enregistrer_sidebar() {
     register_sidebar( array(
-        'name' => __( 'Footer 1', '4w4-eddy-martin' ),
+        'name' => __( 'Footer 1', '4w4' ),
         'id' => 'footer_1',
-        'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4-eddy-martin' ),
+        'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
     ) );
 
     register_sidebar( array(
@@ -92,8 +92,18 @@ function enregistrer_sidebar() {
         'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4' ),
         'before_widget' => '<div id="%1$s" class="widget %2$s">',
         'after_widget' => '</div>',
-        'before_title' => '<h2 class="widget-title">',
-        'after_title' => '</h2>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+
+    register_sidebar( array(
+        'name' => __( 'Footer 3', '4w4' ),
+        'id' => 'footer_3',
+        'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
     ) );
 
 }
