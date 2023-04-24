@@ -1,4 +1,5 @@
 <footer class="site__footer">
+  <div class="Footer__etage1">
   <div class="container-logo-footer">
   <div class="Footer_1">
     <?php dynamic_sidebar( 'Footer_1' ); ?>
@@ -22,6 +23,10 @@
     <?php dynamic_sidebar( 'Footer_3' ); ?>
   </div>
     </div>
+  </div>
+  </div>
+  <div class="Footer_4">
+    <?php dynamic_sidebar( 'Footer_4' ); ?>
   </div>
 </footer>
 <?php wp_footer(); ?>

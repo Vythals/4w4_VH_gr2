@@ -105,6 +105,16 @@ function enregistrer_sidebar() {
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
+    
+    register_sidebar( array(
+        'name' => __( 'Footer 4', '4w4' ),
+        'id' => 'footer_4',
+        'description' => __( 'Une zone  afficher des widgets dans le footer.', '4w4' ),
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget' => '</div>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
 
 }
 add_action( 'widgets_init', 'enregistrer_sidebar' );
