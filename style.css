@@ -320,6 +320,16 @@ template {
   display: none;
 }
 
+/* Définition du box sizing */
+::before,
+::after {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+}
+
 /* --------------------------------------------- base */
 /*
 css font-size clamp generator *
@@ -627,6 +637,90 @@ footer::before {
   word-wrap: break-word;
   width: 90%;
   margin: 0 auto;
+}
+
+.menu-evenement-container .menu,
+.menu-bloc-archive-container .menu {
+  display: flex;
+}
+.menu-evenement-container .menu .menu-item,
+.menu-bloc-archive-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #aaa;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 5px;
+}
+.menu-evenement-container .menu .menu-item a,
+.menu-bloc-archive-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.menu-evenement-container .menu .menu-item a .title,
+.menu-bloc-archive-container .menu .menu-item a .title {
+  display: block;
+  font-size: 2rem;
+}
+.menu-evenement-container .menu .menu-item a .description,
+.menu-bloc-archive-container .menu .menu-item a .description {
+  font-size: 1rem;
+}
+.menu-evenement-container .menu .menu-item a .menu-thumbnail,
+.menu-bloc-archive-container .menu .menu-item a .menu-thumbnail {
+  display: block;
+  width: 150px;
+  height: 150px;
+}
+
+.menu-bloc-archive-container .menu .menu-item {
+  background-repeat: no-repeat;
+  display: block;
+}
+
+.bloc__cours {
+  background-image: url("https://s2.svgbox.net/octicons.svg?ic=mortar-board-bold");
+}
+
+.bloc__4w4 {
+  background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=library");
+}
+
+.menu-cours-container .menu {
+  display: flex;
+  flex-direction: row;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu {
+    flex-direction: column;
+  }
+}
+.menu-cours-container .menu .menu-item {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.menu-cours-container .menu .menu-item a code {
+  display: block;
+  white-space: nowrap;
+}
+.menu-cours-container .menu .menu-item a p {
+  display: none;
+}
+@media screen and (min-width: 1000px) {
+  .menu-cours-container .menu .menu-item a p {
+    display: block;
+    white-space: nowrap;
+  }
 }
 
 /* --------------------------------------------- layout */
