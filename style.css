@@ -642,6 +642,8 @@ footer::before {
 .menu-evenement-container .menu,
 .menu-bloc-archive-container .menu {
   display: flex;
+  justify-content: center;
+  padding: 0;
 }
 .menu-evenement-container .menu .menu-item,
 .menu-bloc-archive-container .menu .menu-item {

@@ -2,6 +2,8 @@
 .menu-bloc-archive-container{ // nav
     .menu {//ul
         display: flex;
+        justify-content: center;
+        padding: 0;
         .menu-item { //li
             display : flex;
             flex-direction: column;
