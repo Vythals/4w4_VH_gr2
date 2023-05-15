@@ -6,6 +6,25 @@
 ?>
 <?php get_header(); ?>
 <main>
+    
+    <section class="blocflex">
+        <?php 
+        
+        wp_nav_menu(array(
+            "menu"=>"evenement",
+            "container"=>"nav"
+
+        ));
+
+        wp_nav_menu(array(
+            "menu"=>"bloc-archive",
+            "container"=>"nav"
+
+        ));
+
+       
+        ?>
+    </section>
     <section class="blocflex">
     <?php
         if (have_posts()): 
@@ -15,10 +34,10 @@
                         $ma_categorie = "galerie";  
                     }    
                  get_template_part("template-parts/categorie", $ma_categorie);
-      
              endwhile;
         endif;    
     ?>
     </section>
 </main>
+
 <?php get_footer(); ?>
