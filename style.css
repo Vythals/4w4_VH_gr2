@@ -588,7 +588,7 @@ footer::before {
 
 .blocflex {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -639,6 +639,10 @@ footer::before {
   margin: 0 auto;
 }
 
+.titre__centre {
+  text-align: center;
+}
+
 .menu-evenement-container .menu,
 .menu-bloc-archive-container .menu {
   display: flex;
@@ -681,6 +685,7 @@ footer::before {
 
 .menu-bloc-archive-container .menu .menu-item {
   background-repeat: no-repeat;
+  background-size: 60px;
   display: block;
 }
 

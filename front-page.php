@@ -6,7 +6,7 @@
 ?>
 <?php get_header(); ?>
 <main>
-    
+    <h2 class="titre__centre">Évenements</h2>
     <section class="blocflex">
         <?php 
         
@@ -14,8 +14,11 @@
             "menu"=>"evenement",
             "container"=>"nav"
 
-        ));
-
+        ));?>
+        </section>
+        <h2 class="titre__centre">Archive</h2>
+        <section class="blocflex">
+        <?php
         wp_nav_menu(array(
             "menu"=>"bloc-archive",
             "container"=>"nav"
@@ -23,6 +26,11 @@
         ));
 
        
+        ?>
+    </section>
+    <section class="blocflex">
+        <?php
+        get_template_part( "template-parts/articles-recent" );
         ?>
     </section>
     <section class="blocflex">

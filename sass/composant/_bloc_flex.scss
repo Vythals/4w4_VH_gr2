@@ -1,7 +1,7 @@
 
 .blocflex {
   display : flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
@@ -49,3 +49,8 @@ h3,h5,h6,p {
   width: 90%;
   margin: 0 auto;
 }
+
+  .titre__centre{
+    text-align: center;
+  }
+
