@@ -16,6 +16,16 @@
 
         ));?>
         </section>
+        <h2 class="titre__centre">Atelier</h2>
+    <section class="blocflex">
+        <?php 
+        
+        wp_nav_menu(array(
+            "menu"=>"atelier",
+            "container"=>"nav"
+
+        ));?>
+        </section>
         <h2 class="titre__centre">Archive</h2>
         <section class="blocflex">
         <?php

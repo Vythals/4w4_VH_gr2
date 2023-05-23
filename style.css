@@ -693,7 +693,7 @@ footer::before {
 .menu-bloc-archive-container .menu .menu-item a .menu-thumbnail {
   display: block;
   width: 150px;
-  height: 150px;
+  height: auto;
 }
 
 .menu-bloc-archive-container .menu .menu-item {
@@ -710,6 +710,53 @@ footer::before {
   background-image: url("https://s2.svgbox.net/hero-solid.svg?ic=library");
 }
 
+.menu-atelier-container .menu {
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+.menu-atelier-container .menu .menu-item {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 3px solid #aaa;
+  border-radius: 25%;
+  background-color: rgba(255, 255, 255, 0.5);
+  margin: 10px;
+  padding: 5px;
+}
+.menu-atelier-container .menu .menu-item a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  text-align: center;
+}
+.menu-atelier-container .menu .menu-item a .title {
+  background-color: #aaa;
+  transition: opacity 0.5s;
+  font-size: 2rem;
+  display: block;
+  opacity: 0;
+}
+.menu-atelier-container .menu .menu-item a .description {
+  display: none;
+  font-size: 1rem;
+}
+.menu-atelier-container .menu .menu-item a .menu-thumbnail {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 150px;
+  height: auto;
+}
+
+.menu-atelier-container .menu .menu-item:hover a .title {
+  opacity: 1;
+}
+.menu-atelier-container .menu .menu-item:hover a .description {
+  display: block;
+}
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
