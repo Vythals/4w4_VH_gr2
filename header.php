@@ -41,8 +41,11 @@
    </header>
 
     <?php 
-    if ( ! is_front_page()){
+    if ( ! is_front_page() && ! is_page_template('template-atelier.php')){
     get_template_part("template-parts/aside"); 
+    }
+    if(is_page_template('template-atelier.php')){
+      get_template_part("template-parts/aside-atelier");
     }
     $nouvelle_classe = "";
   if  (is_front_page() || 

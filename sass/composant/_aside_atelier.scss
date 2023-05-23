@@ -1,0 +1,17 @@
+.image_top{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    img{
+        width: 50%;
+        height: auto;
+        @media screen and (min-width: $largeur__bureau) {
+            width: 100%;
+        }
+    }
+}
+h3{
+    text-align: center;
+}

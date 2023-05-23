@@ -643,6 +643,19 @@ footer::before {
   text-align: center;
 }
 
+.tableau_atelier {
+  display: flex;
+}
+.tableau_atelier tr {
+  background-color: rgb(107, 212, 156);
+}
+.tableau_atelier tr th {
+  border: 1px solid rgb(76, 135, 104);
+}
+.tableau_atelier tr td {
+  border: 1px solid rgb(76, 135, 104);
+}
+
 .menu-evenement-container .menu,
 .menu-bloc-archive-container .menu {
   display: flex;
@@ -728,6 +741,27 @@ footer::before {
     display: block;
     white-space: nowrap;
   }
+}
+
+.image_top {
+  width: 100%;
+  height: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.image_top img {
+  width: 50%;
+  height: auto;
+}
+@media screen and (min-width: 1000px) {
+  .image_top img {
+    width: 100%;
+  }
+}
+
+h3 {
+  text-align: center;
 }
 
 /* --------------------------------------------- layout */

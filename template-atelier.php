@@ -10,13 +10,28 @@
 if ( have_posts() ) : the_post(); ?>
 <h1><?= get_the_title(); ?></h1>
 <?php the_content();?>
-    <section>
-        <p><?php the_field('formateur'); ?></p>
-        <p><?php the_field('date'); ?></p>
-        <p><?php the_field('heure'); ?></p>
-        <p><?php the_field('duree'); ?></p>
-        <p><?php the_field('local'); ?></p>
-    </section>
+<table class="tableau_atelier">
+  <tr>
+    <th>Formateur</th>
+    <td><?php the_field('formateur'); ?></td>
+  </tr>
+  <tr>
+    <th>Date</th>
+    <td><?php the_field('date'); ?></td>
+  </tr>
+  <tr>
+    <th>Heure</th>
+    <td><?php the_field('heure'); ?></td>
+  </tr>
+  <tr>
+  <th>Durée</th>
+  <td><?php the_field('duree'); ?> Heures</td>
+  </tr>
+  <tr>
+  <th>Local</th>
+  <td><?php the_field('local'); ?></td>
+  </tr>
+</table>
     <?php endif;?>
 </main><!-- #main -->
 <?php
