@@ -1,4 +1,4 @@
-<aside class="site__aside">
+<aside class="site__aside-atelier">
     <h3>Menu secondaire</h3>
     <?php 
     $ma_categorie  = "4w4";
