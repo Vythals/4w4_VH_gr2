@@ -757,6 +757,7 @@ footer::before {
 .menu-atelier-container .menu .menu-item:hover a .description {
   display: block;
 }
+
 .menu-cours-container .menu {
   display: flex;
   flex-direction: row;
