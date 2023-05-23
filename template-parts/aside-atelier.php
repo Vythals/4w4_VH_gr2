@@ -9,7 +9,7 @@
     <h3>Nos atelier en 2023</h3>
     <?php 
     wp_nav_menu(array(
-        "menu" => "atelier",
+        "menu" => "atelier-aside",
         "container" => "nav"  
     )); ?>
 </aside>
